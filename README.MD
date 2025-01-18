@@ -1,0 +1,1 @@
+Repo used for my studies in C++ and using external APIs (in this case Spotify's web API).
