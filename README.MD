@@ -1,8 +1,31 @@
-# C++ API study
+# C++ Magic the Gathering Collection tracker
 
-I'm using this repo as for studying integration of APIs in C++ as well as developing some custom functionalities based on my Spotify user data.
+This is a project that I use to study some concepts of C++.
 
-This repo contains a **.devcontainer** with the necessary **Dockerfile** for running a proper dev environment. I'm also using smaltby's [spotify-api-plusplus](https://github.com/smaltby/spotify-api-plusplus) to be to get the data from the web API.
+The objective is to use [Scryfall's API](https://scryfall.com/docs/api) to get some information about my collection of Magic The Gathering cards.
 
-The idea with this project is to explore how to integrate and build on top of the stablished API and how to get data and store/process this information in an efficient and fast way.
+There are no big depencies on the project and a devcontainer can be used to run it in a compatible environment. 
 
+# How to build
+
+After opening the application on the container you can build it by following:
+
+> mkdir build
+>
+> cd build
+>
+> cmake ..
+>
+>> Run 
+>>
+>> cmake -DCMAKE_BUILD_TYPE=Debug ..
+>>
+>> if you want to have access to the debugger for the application.
+>
+>
+> make
+
+
+This should build the project for you with an exrcutable main. 
+
+The project is not yet ready so the main is not fully functional.
