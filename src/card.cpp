@@ -16,7 +16,6 @@ card::card(std::string input)
 
 card::~card()
 {
-    std::cout << "Calling the destructor!" << std::endl;
 }
 
 void card::print()
@@ -25,4 +24,9 @@ void card::print()
     {
        std::cout << elem.first << " | " << elem.second << "\n";
     }
+}
+
+std::string card::getName()
+{
+    return info["name"];
 }
