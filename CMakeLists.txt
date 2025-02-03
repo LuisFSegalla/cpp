@@ -16,8 +16,9 @@ target_link_libraries(
         pthread
         curl
         curlpp
-        card
         apiWrapper
+        card
+        collection
 )
 
 # target_include_directories()
