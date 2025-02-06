@@ -19,6 +19,7 @@ target_link_libraries(
         apiWrapper
         card
         collection
+        deck
 )
 
 # target_include_directories()

@@ -1,4 +1,5 @@
 #include "card.hpp"
+#include "deck.hpp"
 #include <nlohmann/json.hpp>
 #include <fstream>
 #include <iostream>
@@ -12,10 +13,13 @@ card::card(std::string input)
     info["cardmarket_url"] = g["purchase_uris"]["cardmarket"];
     info["mana_cost"] = g["mana_cost"];
     info["cmc"] = g["cmc"].dump();
+
+    inDeck = nullptr;
 }
 
 card::~card()
 {
+    inDeck = nullptr;
 }
 
 void card::print()
@@ -29,4 +33,14 @@ void card::print()
 std::string card::getName()
 {
     return info["name"];
+}
+
+void card::setDeck(deck *d)
+{
+    inDeck = d;
+}
+
+deck* card::getDeck()
+{
+    return inDeck;
 }
