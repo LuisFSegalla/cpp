@@ -8,5 +8,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     cmake cppcheck valgrind clang lldb\
      llvm gdb libcurlpp-dev \
      libjsoncpp-dev libsqlite3-dev \
+     libboost-all-dev \
      pkg-config nlohmann-json3-dev&& \
      apt-get -y clean all

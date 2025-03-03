@@ -4,9 +4,13 @@ set (CMAKE_CXX_STANDARD 20)
 
 set(MAIN_TEST 1.0)
 
+set(TEST_DIR ${mains_SOURCE_DIR}/test)
+
+set(SRC_DIR ${mains_SOURCE_DIR}/src)
+
 add_subdirectory(src)
 # add_library(userWrapper userWrapper.cpp)
-include_directories("${CMAKE_CURRENT_SOURCE_DIR}/src")
+include_directories(${SRC_DIR})
 
 
 add_executable(main main.cpp)
@@ -22,4 +26,4 @@ target_link_libraries(
         deck
 )
 
-# target_include_directories()
+add_subdirectory(${TEST_DIR})
